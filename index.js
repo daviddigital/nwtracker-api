@@ -1,5 +1,7 @@
 const { response } = require('express')
 const express = require('express')
+const cors = require('cors')
+
 const Pool = require('pg').Pool
 const pool = new Pool({
     user: 'postgres',
@@ -10,6 +12,8 @@ const pool = new Pool({
 })
 
 const app = express()
+// only for development, will allow cors for production
+app.use(cors())
 const port = 4000
 
 app.use(express.json())
