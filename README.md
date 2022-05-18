@@ -1,4 +1,8 @@
-## WIP
+## API for nwtracker.app
+
+Testing Node/Express as API for nwtracker.app (React frontend).
+
+Instead moved to Rails API backend. 
 
 ## Notes
 
