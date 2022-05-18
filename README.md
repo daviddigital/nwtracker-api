@@ -13,9 +13,12 @@ npm i cors
 ```
 
 -- 
-manually create table in postgres
-set up test: 
+Manually create table in postgres
+Set up test: 
+
+```
 pool.query('SELECT * FROM CATEGORIES', (error, results) => {
     if (error) throw error
     console.log(results.rows)
 }) 
+```
